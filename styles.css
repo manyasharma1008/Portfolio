@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f4f1; /* Honeydew */
+}
+
+header {
+    background: rgb(240, 98, 146); /* Dark Purple */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #D7A9B0; /* Naples Yellow */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #dcdcdc; /* Ash Gray */
+    border: 1px solid #333; /* Rich Black */
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact label {
+    margin: 5px 0;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dcdcdc; /* Ash Gray */
+    border-radius: 4px;
+}
+
+#contact button {
+    background-color: rgb(240, 98, 146); /* Dark Purple */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #F06292; /* Darker shade of Dark Purple */
+}
+
+footer {
+    background: #333; /* Rich Black */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
