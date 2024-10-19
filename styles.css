@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    animation: drop 6s ease forwards , disappear 0s 3s forwards;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin:10px auto;
+    font-family: cursive; 
+}
+
+@keyframes drop {
+    0% {
+        top: -100px; 
+        opacity: 0;
+    }
+    50% {
+        top: 30%; 
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+    100% {
+        top: 50%; 
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes disappear {
+    to {
+        opacity: 0; 
+        visibility: hidden;
+    }
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: #f4a261;
+}
+
+#home{
+    background-image:url("portfolio.png");
+    background-size: cover;
+    color: #000000;
+}
+
+
+/* Landing Page */
+.landing-page {
+    height: 100vh;
+    background: #264653;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-page h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.landing-page .btn {
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.landing-page.btn:hover {
+    background-color: #e76f51;
+}
+
+/* About Me Page */
+.about-page {
+    padding: 50px 20px;
+    background-color: #CBCBCB;
+    text-align: center;
+}
+
+.about-page h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-page p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Projects Page */
+.projects-page {
+    padding: 50px 20px;
+    background-color: #FFB2B2;
+    text-align: center;
+}
+
+.projects-page h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Flexbox container for the project cards */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card1, .project-card2 {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px; /* Set a fixed width for each card */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card1 h3,
+.project-card2 h3 {
+    color: black;
+}
+
+.demo-card {
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.demo-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.demo-card:hover {
+    transition: ease-in-out 0.2s;
+    transform: translateX(-5px);
+}
+
+.project-card1 p,
+.project-card2 p {
+    color: rgb(235, 217, 217);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    color: #f4a261;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .landing-page h1 {
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-card1, .project-card2 {
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    .text {
+        font-size: 40px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .text {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .text {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+    .text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 479px) {
+    .text {
+        font-size: 20px;
+    }
+}
